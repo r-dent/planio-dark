@@ -1,0 +1,57 @@
+@-moz-document regexp(".*\\.plan\\.io.*/wiki.*") {
+/** Backgrounds **/
+#main, #main.nosidebar,
+div#content 
+{
+    background-color: #33333e;
+}
+
+/** Table of contents **/
+div.wiki ul.toc {
+    background-color: #555d60;
+    border-radius: 6px;
+    margin-top: 0;
+}
+div.wiki ul.toc > li:first-child {
+    color: #eee;
+}
+div.wiki ul.toc a, div.wiki ul.toc a:hover {
+    color: #dfd68e
+}
+
+/** Images **/
+div.wiki img {
+    opacity: 0.7
+}
+div.wiki img:hover {
+    opacity: 1
+}
+
+/** Tables **/
+div.wiki table {
+    color: #111;
+    background-color: #eee;
+}
+div.wiki table img {
+    opacity: 1;
+}
+
+/** Code **/
+div.wiki pre {
+    background-color: #fff;
+    color: #222;
+    filter: invert(0.85)
+}
+
+/** Text **/
+.wiki h1, .wiki h2, .wiki h3, #content .wiki h1,
+#content h1, h2, h3, h4, 
+.wiki.wiki-page 
+{
+    color: #eee;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+a, a:link, a:visited, #footer a, #footer a:visited, div.journal ul.details a {
+    color: #63c1df;
+}
+}
