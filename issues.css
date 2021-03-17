@@ -1,0 +1,79 @@
+@-moz-document regexp(".*\\.plan\\.io.*/issues.*") {
+/** Backgrounds **/
+#main, #main.nosidebar,
+div#content, div.issue hr
+{
+    background-color: #33333e;
+}
+div#preview fieldset {
+    color: #eee;
+    background: repeating-linear-gradient(-45deg, #33333e, #33333e 10px, #3c3c47 10px, #3c3c47 20px);
+}
+div.issue,
+.journal h4:first-child,
+div#issue-changesets,
+#issue-changesets div.changeset:nth-child(2n)
+{
+    background-color: #444454; 
+}
+#issue-changesets div.changeset:nth-child(2n+1),
+#issue-changesets div.changeset:nth-child(2n+1):hover
+{
+    background-color: #4d4d61; 
+}
+div#issue-changesets div.changeset {
+    border-bottom: 1px solid #777
+}
+div.issue {
+    margin-bottom: 1em;
+}
+.journal h4:first-child {
+    border-radius: 3px
+}
+div.issue hr {
+    height: 1px;
+    margin-left: 0;
+}
+
+/** Images **/
+div#content img {
+    opacity: 0.7
+}
+div#content img:hover {
+    opacity: 1
+}
+
+/** Tables **/
+div#content table {
+    color: #111;
+    background-color: #eee;
+}
+div#content table img {
+    opacity: 1;
+}
+
+/** Code **/
+div#content pre {
+    background-color: #fff;
+    color: #222;
+    filter: invert(0.85)
+}
+
+/** Text **/
+#content, div#preview fieldset legend {
+    color: #eee
+}
+#content h1, h2, h3, h4
+{
+    color: #eee;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+a, a:link, a:visited, #footer a, #footer a:visited, div.journal ul.details a {
+    color: #63c1df;
+}
+
+/** Buttons **/
+.contextual a:not(.icon-only):link, .contextual a:not(.icon-only):visited, .contextual a:not(.icon-only):active, p.buttons a:not(.icon-only):link, p.buttons a:not(.icon-only):visited, p.buttons a:not(.icon-only):active {
+    color: #eee
+}
+}
