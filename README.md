@@ -1,2 +1,2 @@
 # planio-dark
-Dark theme for Plan.io project management tool.
+Dark theme for [Plan.io](https://plan.io/) project management tool.
